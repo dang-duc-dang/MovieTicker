@@ -5,3 +5,5 @@ $(window).on("load", function () {
   $(document).ready(function () {
             init_Home();
         });
+        
+ 

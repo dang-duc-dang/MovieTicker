@@ -1,3 +1,6 @@
+ALTER TABLE tickets
+ADD CONSTRAINT unique_room_chair_id
+UNIQUE (room_chair_id);
 # Movie-Tickets
 
 ## Trang web bán vé xem phim

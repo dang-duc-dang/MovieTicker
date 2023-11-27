@@ -62,9 +62,9 @@
 <script src="/js/form.js"></script>
 <!-- Custom -->
 <script src="/js/custom.js"></script>
-	<script src="js/home/jquery.js"></script>
+<!--	<script src="js/home/jquery.js"></script>
 	<script src="js/home/jquery.flexslider.js"></script>
-	<script src="js/home/templatemo-script.js"></script>
+	<script src="js/home/templatemo-script.js"></script> -->
 	<script src="js/home/loader.js"></script>
 	<script src="/js/plugins.js"></script>
 	<script src="/js/home/main.js"></script>

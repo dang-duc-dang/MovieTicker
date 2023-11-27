@@ -2782,6 +2782,7 @@ input[type="button"].btn-block {
   top: 16px;
   left: 15px;
   z-index: 2;
+  padding-bottom: 13px;
 }
 .logo img {
   width: 111px;
@@ -4455,7 +4456,7 @@ ul#navigation li.mega-menu__coloum--outheading {
   padding-top: 44px;
 }
 ul#navigation > li {
-  padding-bottom: 21px;
+  padding-bottom: 0px;
 }
 ul#navigation > li > ul.mega-menu {
   width: 1140px;
@@ -6374,12 +6375,12 @@ ul#navigation li.mega-menu__nav-item:hover:before {
 }
 .sits .sits__indecator {
   display: inline-block;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   margin: 5px;
   border: 1px solid #4c4145;
   font-size: 13px;
-  padding-top: 5px;
+  padding-top: 10px;
 }
 .sits .sits__line {
   width: 30px;
@@ -6444,8 +6445,8 @@ ul#navigation li.mega-menu__nav-item:hover:before {
 .sits .sits__row .sits__place {
   position: relative;
   margin: 5px;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   display: inline-block;
   line-height: 30px;
   font-size: 10px;
@@ -6455,8 +6456,8 @@ ul#navigation li.mega-menu__nav-item:hover:before {
 }
 .sits .sits__row .sits__place:before {
   content: '';
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   position: absolute;
   top: 0px;
   left: 0px;

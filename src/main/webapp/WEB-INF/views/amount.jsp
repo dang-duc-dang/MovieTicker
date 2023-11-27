@@ -8,6 +8,13 @@
 <body>
 <jsp:include page="template/nav.jsp"/>
 
+<div id="loader-wrapper">
+		<div id="loader"></div>
+
+		<div class="loader-section section-left"></div>
+		<div class="loader-section section-right"></div>
+
+	</div>
 <div class="container">
     <h2>BẢNG GIÁ VÉ PHIM 2D TẠI RẠP HAC CINEMA</h2>
 

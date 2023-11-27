@@ -24,6 +24,8 @@
 <!-- Nav -->
 <jsp:include page="../../template/nav.jsp"/>
 
+
+
 <div class="container">
     <div>
 

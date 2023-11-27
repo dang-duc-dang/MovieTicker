@@ -63,6 +63,13 @@
 <!-- Nav -->
 <jsp:include page="../template/nav.jsp"/>
 
+<div id="loader-wrapper">
+		<div id="loader"></div>
+
+		<div class="loader-section section-left"></div>
+		<div class="loader-section section-right"></div>
+
+	</div>
 <!-- Content-->
 <div class="container">
     <br>

@@ -15,6 +15,7 @@
 <!-- Nav -->
 <jsp:include page="../template/nav.jsp"/>
 
+
 <!-- Content-->
 <div class="container">
 
@@ -145,7 +146,7 @@
     </div>
 
     <c:choose>
-        <c:when test="${ticket == null}">
+        <c:when test="">
             <div class="alert alert-warning" role="alert">
                 <h4 class="alert-heading">Bạn đã đặt vé không thành công!</h4>
                 <p>Ghế này đã được mua trước, vui lòng chọn ghế khác!</p>
@@ -161,8 +162,12 @@
             <div class="ticket-wrapper hidden">
                 <div class="alert alert-success" role="alert">
                     <h4 class="alert-heading">Bạn đã đặt vé thành công!</h4>
-                    <p>Mời bạn lấy mã code ${ticket.code} để nhận vé tại quầy thanh toán!</p>
-                    <hr>
+                <c:forEach var="ticket" items="${tickets}">
+                
+    <p>Mã vé: ${ticket.code}</p>
+    <!-- Thêm thông tin khác về vé nếu cần -->
+    <hr>
+</c:forEach>
                     <p class="mb-0">Chúc bạn một ngày đẹp.</p>
                 </div>
             </div>
