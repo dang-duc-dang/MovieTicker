@@ -146,7 +146,7 @@
     </div>
 
     <c:choose>
-        <c:when test="">
+        <c:when test="${ticket }">
             <div class="alert alert-warning" role="alert">
                 <h4 class="alert-heading">Bạn đã đặt vé không thành công!</h4>
                 <p>Ghế này đã được mua trước, vui lòng chọn ghế khác!</p>
@@ -168,6 +168,7 @@
     <!-- Thêm thông tin khác về vé nếu cần -->
     <hr>
 </c:forEach>
+ <p class="mb-0">Bạn có thể kiểm tra vé trong lịch sử.</p>
                     <p class="mb-0">Chúc bạn một ngày đẹp.</p>
                 </div>
             </div>

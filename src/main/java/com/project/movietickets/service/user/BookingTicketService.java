@@ -7,7 +7,9 @@ import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 import java.util.UUID;
 import java.util.stream.Collectors;
 
@@ -23,17 +25,28 @@ public class BookingTicketService {
 
     private final TicketRepository ticketRepository;
 
+    private final Set<Integer> processedRoomChairIds = new HashSet<>();
+    
     public TicketEntity buyTicket(int scheduleId, int roomChairId, String username) {
         if ( !isTicketValid(scheduleId, roomChairId)) {
             return null;
         }
 
+        
+        if (!processedRoomChairIds.contains(roomChairId)) {
+           
+        	processedRoomChairIds.add(roomChairId);
+        } else {
+			return null;
+		}
+        	
         var roomChair = roomChairRepository.getOne(roomChairId);
         var roomChairSchedule = roomMovieScheduleRepository.getOne(scheduleId);
         var code = UUID.randomUUID().toString().substring(0, 13).toUpperCase();
         var user = userRepository.findUserEntityByUsername(username).get();
 
         roomChair.setStatus(true);
+      
         roomChairRepository.save(roomChair);
 
         // set amount
@@ -53,6 +66,8 @@ public class BookingTicketService {
                 .user(user)
                 .amount(amount)
                 .build();
+      
+       
 
         return ticketRepository.save(ticket);
     }

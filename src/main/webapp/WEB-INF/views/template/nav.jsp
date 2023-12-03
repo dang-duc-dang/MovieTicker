@@ -44,6 +44,10 @@
                                 "                    <span class=\"sub-nav-toggle plus\"></span>\n" +
                                 "                    <a href=\"/history\">Lịch sử</a>\n" +
                                 "                </li>");
+                        out.print("<li>\n" +
+                                "                    <span class=\"sub-nav-toggle plus\"></span>\n" +
+                                "                    <a href=\"/change-password\">Đổi mật khẩu</a>\n" +
+                                "                </li>");
                     } else if (request.isUserInRole("ROLE_EMPLOYEE")) {
                         out.print("<li>\n" +
                                 "                    <span class=\"sub-nav-toggle plus\"></span>\n" +

@@ -145,10 +145,7 @@
 									<span class="sits__indecator">4</span> <span
 										class="sits__indecator">5</span> <span class="sits__indecator">6</span>
 									<span class="sits__indecator">7</span> <span
-										class="sits__indecator">8</span> <span class="sits__indecator">9</span>
-									<span class="sits__indecator">10</span> <span
-										class="sits__indecator">11</span> <span
-										class="sits__indecator">12</span> 
+										class="sits__indecator">8</span>  
 								</footer>
 							</div>
 						</div>

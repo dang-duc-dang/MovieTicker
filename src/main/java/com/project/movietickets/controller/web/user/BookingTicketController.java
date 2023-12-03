@@ -37,9 +37,7 @@ public class BookingTicketController {
 	        // Kiểm tra xem ticket có bị null không trước khi lưu vào SQL
 	        if (ticket != null) {
 	            tickets.add(ticket);
-	        } else {
-	        	tickets.remove(ticket);
-	        }
+	        } 
 	    }
 
 	    // Kiểm tra xem có vé hợp lệ nào không trước khi thêm vào modelAndView
