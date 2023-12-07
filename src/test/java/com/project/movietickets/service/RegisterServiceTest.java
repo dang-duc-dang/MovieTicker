@@ -21,9 +21,7 @@ public class RegisterServiceTest {
                 "fullname",
                 "email@gmail.com",
                 "0859292357",
-                "HaNoi",
-                "CGV",
-                true,
+                
                 "2020-02-02"
         );
 

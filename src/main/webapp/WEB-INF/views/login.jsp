@@ -3,42 +3,75 @@
 <html>
 <head>
     <!-- Head -->
-    <jsp:include page="template/header.jsp"/>
+    <title>Official Signin</title>
+   <link href="/css/login.css" rel="stylesheet" />
+   
+   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- //css files -->
+	<!-- web-fonts -->
+	<link href="//fonts.googleapis.com/css?family=Snippet" rel="stylesheet"><!--online fonts-->
 </head>
 
 <body>
 <!-- Nav -->
-<jsp:include page="template/nav.jsp"/>
+
 
 <!-- Content-->
-<form id="login-form" class="login" method='post' novalidate='' action="/login">
-    <p class="login__title">ĐĂNG NHẬP<br><span class="login-edition">Chào mừng bạn đến HAC Cinema</span></p>
 
-    <div class="social social--colored">
-        <a href='#' class="social__variant fa fa-facebook"></a>
-        <a href='#' class="social__variant fa fa-twitter"></a>
-        <a href='#' class="social__variant fa fa-tumblr"></a>
-    </div>
+	<h1 class="w3ls">Official Sign In Form</h1>
+	<div class="content-w3ls">
+		<div class="content-agile1">
+			<h2 class="agileits1">Official</h2>
+			<p class="agileits2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+		</div>
+		<div class="content-agile2">
+			<form action="/login" method="post">
+				<div class="form-control w3layouts">
+					<input type="text" id="firstname" name="username" placeholder="Username"
+						title="Please enter your First Name" required="">
+				</div>
 
-    <p class="login__tracker">or</p>
+				<div class="form-control w3layouts">
+					<input type="password" id="email" name="password" placeholder="Passwords"
+						title="Please enter a valid email" required="">
+				</div>
 
-    <div class="field-wrap">
-        <input type='text' placeholder='Username' name='username' class="login__input">
-        <input type='password' placeholder='Password' name='password' class="login__input">
 
-        <input type='checkbox' id='#informed' class='login__check styled'>
-        <label for='#informed' class='login__check-info'>lưu đăng nhập</label>
-    </div>
 
-    <div class="login__control">
-        <button type='submit' class="btn btn-md btn--warning btn--wider">Đăng nhập</button>
-        <a href="#" class="login__tracker form__tracker">Quên mật khẩu?</a>
-    </div>
-</form>
+				<input type="submit" class="register" value="SIGN IN">
+			</form>
+			<script type="text/javascript">
+				window.onload = function () {
+					document.getElementById("password1").onchange = validatePassword;
+					document.getElementById("password2").onchange = validatePassword;
+				}
+				function validatePassword() {
+					var pass2 = document.getElementById("password2").value;
+					var pass1 = document.getElementById("password1").value;
+					if (pass1 != pass2)
+						document.getElementById("password2").setCustomValidity("Passwords Don't Match");
+					else
+						document.getElementById("password2").setCustomValidity('');
+					//empty string means no validation error
+				}
+			</script>
+			<p class="wthree w3l">Fast Signup With Your Favourite Social Profile</p>
+			<ul class="social-agileinfo wthree2">
+				<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+				<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+			</ul>
 
-<div class="clearfix"></div>
+		</div>
+		<div class="clear"></div>
 
+	</div>
+	<p class="copyright w3l">Official registration form 2017. All Rights Reserved | Do not have an account <a
+			href="http://localhost:8080/register" >SignUp</a></p>
 <!-- Footer -->
-<jsp:include page="template/footer.jsp"/>
+
 </body>
 </html>

@@ -23,10 +23,7 @@ public class RegisterController {
                                  @RequestParam String fullname,
                                  @RequestParam String email,
                                  @RequestParam String phone,
-                                 @RequestParam String zone,
-                                 @RequestParam String cinemaLove,
                                  @RequestParam String dateOfBirth,
-                                 @RequestParam boolean gender,
                                  Model model){
         UserEntity result = service.registerUser(
                 username,
@@ -34,9 +31,6 @@ public class RegisterController {
                 fullname,
                 email,
                 phone,
-                zone,
-                cinemaLove,
-                gender,
                 dateOfBirth
         );
 

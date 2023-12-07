@@ -45,7 +45,7 @@ public class EmployeeController {
     }
 
     @PostMapping("/manage/checkout")
-    public RedirectView checkoutTicket(@RequestParam("code") String code, RedirectView redirectView) {
+    public RedirectView checkoutTicket(@RequestParam("code") String code, RedirectView redirectView) { 
         ticketService.updateCheckoutTicket(code);
         redirectView.setUrl("/manage");
         return redirectView;

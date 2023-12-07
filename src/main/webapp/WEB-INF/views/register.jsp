@@ -1,75 +1,126 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <!DOCTYPE HTML>
 <html>
 <head>
-    <!-- Head -->
-    <jsp:include page="template/header.jsp"/>
+<!-- Head -->
+<title>Official Signin</title>
+<link href="/css/login.css" rel="stylesheet" />
+
+<link
+	href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap"
+	rel="stylesheet">
+
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- //css files -->
+<!-- web-fonts -->
+<link href="//fonts.googleapis.com/css?family=Snippet" rel="stylesheet">
+<!--online fonts-->
+<style type="text/css">
+.content-w3ls .content-agile1 {
+	width: 50%;
+	float: left;
+	background: url(../images/content.jpg) no-repeat;
+	background-position: center;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-ms-background-size: cover;
+	height: 755px;
+}
+</style>
 </head>
 
 <body>
-<!-- Nav -->
-<jsp:include page="template/nav.jsp"/>
+	<!-- Nav -->
 
-<!-- Content-->
-<div class="content">
-    <div class="container-fluid" style="min-height: 550px;;">
-        <h1 class="text-center" style="margin-top: 20px;margin-left: 70px;color: #000000">ĐĂNG KÍ</h1><br>
-        <div class="row">
-            <div class="col-xs-12 col-sm-10 col-md-5 well well-sm col-md-offset-4">
-                <legend><a href=""></a> Đăng ký thành viên!
-                </legend>
-                <form action="/register" method="post" class="form" role="form" id="form-register">
-                    <div class="row">
-                        <div class="col-xs-6 col-md-6">
-                            <input class="form-control" name="username" placeholder="User Name" required="" autofocus=""
-                                   type="text" id="user"><br>
-                        </div>
 
-                        <div class="col-xs-6 col-md-6">
-                            <input class="form-control" name="fullname" placeholder="Full Name" required="" type="text">
-                        </div>
-                    </div>
-                    <input class="form-control" name="email" placeholder="Email" type="email" required><br>
-                    <input class="form-control" name="phone" placeholder="Số điện thoại" type="number" required><br>
-                    <input class="form-control" id="password" name="password" placeholder="Mật khẩu" type="password"
-                           required><br>
-                    <input class="form-control" id="re-password" name="re-password" placeholder="Nhập lại mật khẩu"
-                           type="password" required>
-                    <br>
+	<!-- Content-->
+	<h1 class="w3ls">Official Sign Up Form</h1>
+	<div class="content-w3ls">
+		<div class="content-agile1">
+			<h2 class="agileits1">Official</h2>
+			<p class="agileits2">Lorem ipsum dolor sit amet, consectetur
+				adipiscing elit.</p>
+		</div>
+		<div class="content-agile2">
+			<form action="/register" method="post">
+				<div class="form-control w3layouts">
+					<input type="text" id="firstname" name="username"
+						placeholder="Username" title="Please enter your First Name"
+						required="">
+				</div>
 
-                    <input class="form-control" name="cinemaLove" placeholder="Rạp yêu thích" type="text" required><br>
+				<div class="form-control w3layouts">
+					<input type="text" id="email" name="fullname"
+						placeholder="Fullname" title="Please enter a valid email"
+						required="">
+				</div>
 
-                    <input class="form-control" name="zone" placeholder="Khu vực" type="text" required><br>
+				<div class="form-control w3layouts">
+					<input type="email" id="email" name="email"
+						placeholder="mail@example.com" title="Please enter a valid email"
+						required="">
+				</div>
 
-                    <label for="date-of-birth"> Ngày sinh</label>
-                    <div class="row">
-                        <div class="col-xs-6 col-md-12">
-                            <input type="date" id="date-of-birth" name="dateOfBirth"
-                                   class="form-control" required><br>
-                        </div>
-                    </div>
+				<div class="form-control w3layouts">
+					<input type="number" id="email" name="phone"
+						placeholder="Phone number" title="Please enter a valid email"
+						required="">
+				</div>
 
-                    <label for="">Giới tính</label><br>
-                    <label class="radio-inline">
-                        <input name="gender" id="inlineCheckbox1" value="true" type="radio">Nam
-                    </label>
-                    <label class="radio-inline">
-                        <input name="gender" id="inlineCheckbox2" value="false" type="radio">Nữ
-                    </label>
-                    <br>
+				<div class="form-control w3layouts">
+					<input type="password" id="email" name="password"
+						placeholder="Passwords" title="Please enter a valid password"
+						required="">
+				</div>
 
-                    <p>${message}</p>
-                    <button id="btn-register" class="btn btn-lg btn-primary btn-block" type="submit"
-                            style="letter-spacing: 7px"> ĐĂNG KÍ
-                    </button>
-                    <br>
-                </form>
-            </div>
-        </div>
-    </div>
+				<div class="form-control w3layouts">
+					<input type="date" id="email" name="dateOfBirth"
+						placeholder="Passwords" title="Please enter a valid email"
+						required="">
+				</div>
 
-</div>
-<!-- Footer -->
-<jsp:include page="template/footer.jsp"/>
+
+				<p class="wthree w3l">${message}</p>
+				<input type="submit" class="register" value="SIGN UP">
+			</form>
+			<script type="text/javascript">
+				window.onload = function() {
+					document.getElementById("password1").onchange = validatePassword;
+					document.getElementById("password2").onchange = validatePassword;
+				}
+				function validatePassword() {
+					var pass2 = document.getElementById("password2").value;
+					var pass1 = document.getElementById("password1").value;
+					if (pass1 != pass2)
+						document.getElementById("password2").setCustomValidity(
+								"Passwords Don't Match");
+					else
+						document.getElementById("password2").setCustomValidity(
+								'');
+					//empty string means no validation error
+				}
+			</script>
+			<p class="wthree w3l">Fast Signup With Your Favourite Social
+				Profile</p>
+			<ul class="social-agileinfo wthree2">
+				<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+				<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+			</ul>
+
+		</div>
+		<div class="clear"></div>
+
+	</div>
+	<p class="copyright w3l">
+		Official registration form 2017. All Rights Reserved | Do you already
+		have an account <a href="http://localhost:8080/login">Sign In</a>
+	</p>
+	<!-- Footer -->
 </body>
 </html>

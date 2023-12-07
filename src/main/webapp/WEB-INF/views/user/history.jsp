@@ -44,6 +44,9 @@
                         <h4>Ghế: ${ticket.roomChair.chair.position}</h4>
                     </div>
                     <div>
+                        <h4>Giá vé: ${ticket.amount}.000Đ</h4>
+                    </div>
+                    <div>
                         <a href="/history/${ticket.id}/delete" type="button" class="btn btn-primary">Hủy vé</a>
                     </div>
 

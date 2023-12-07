@@ -24,9 +24,9 @@ public class RegisterService {
                                    String fullname,
                                    String email,
                                    String phone,
-                                   String zone,
-                                   String cinemaLove,
-                                   boolean gender,
+                                  
+                                  
+                                  
                                    String dateOfBirth) {
 
         UserEntity user = UserEntity.builder()
@@ -34,11 +34,11 @@ public class RegisterService {
                 .password(passwordEncoder.encode(password))
                 .fullName(fullname)
                 .email(email)
-                .cinemaLove(cinemaLove)
-                .zone(zone)
+               
+               
                 .phone(phone)
                 .role(Role.ROLE_USER)
-                .gender(gender)
+               
                 .dateOfBirth(LocalDate.parse(dateOfBirth))
                 .build();
 
