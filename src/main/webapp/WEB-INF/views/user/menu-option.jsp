@@ -4,7 +4,7 @@
   <section class="container">
             <div class="order-container">
                 <div class="order">
-                    <img class="order__images" alt='' src="images/tickets.png">
+                    <img class="order__images" alt='' src="/images/tickets.png">
                     <p class="order__title">Book a ticket <br><span class="order__descript">and have fun movie
                             time</span></p>
                     <div class="order__control">

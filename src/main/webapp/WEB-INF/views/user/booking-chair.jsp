@@ -88,9 +88,8 @@
 					<div class="choose-sits__info choose-sits__info--first">
 						<ul>
 							<li class="sits-price marker--none"><strong>Price</strong></li>
-							<li class="sits-price sits-price--cheap">$10</li>
-							<li class="sits-price sits-price--middle">$20</li>
-							<li class="sits-price sits-price--expensive">$30</li>
+							<li class="sits-price sits-price--cheap">40.000đ</li>
+							
 						</ul>
 					</div>
 
@@ -118,7 +117,7 @@
 									<span class="sits__indecator">G</span> 
 									<span class="sits__indecator">G</span> 
 									<span class="sits__indecator">G</span> 
-									<span class="sits__indecator">G</span> 
+									
 								</aside>
 
 								<div class="sits__row">
@@ -129,10 +128,16 @@
 											class="sits__place sits-price--cheap info-room-chair" data-place='A2'
 											 onclick="selectSeat(${roomChair.id}, '${roomChair.chair.position}')"
 											data-price='10'>${roomChair.chair.position}</span>
-										<c:if test="${(loop.index+1)%8==0}">
+										<c:if test="${(loop.index+1)%12==0}">
 											<br>
 										</c:if>
-									</c:forEach>
+										
+								<c:if test="${(loop.index+1)==4 ||(loop.index+1)==8 || (loop.index+1)==16 || (loop.index+1)==20 || (loop.index+1)==28 || (loop.index+1)==32 || (loop.index+1)==40 || (loop.index+1)==44 || (loop.index+1)==52 || (loop.index+1)==56 || (loop.index+1)==64}">
+										
+											<span style="margin: 15px"></span>
+										</c:if>
+										
+									</c:forEach>     
 								</div>
 
 								<aside class="sits__checked">

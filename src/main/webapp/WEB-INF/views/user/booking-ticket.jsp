@@ -165,7 +165,10 @@
 				<div class="ticket-wrapper hidden">
 					<section class="container">
 						<div class="order-container">
-							
+							 <div class="order">
+                    <img class="order__images" alt='' src="/images/tickets.png">
+                    <p class="order__title">Thank you <br><span class="order__descript">you have successfully purchased tickets</span></p>
+                </div>
 								<div class="ticket">
 								<c:forEach var="ticket" items="${tickets}">
 									<div class="ticket-position">
