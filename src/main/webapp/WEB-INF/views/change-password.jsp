@@ -22,8 +22,8 @@
 
     <div class="field-wrap">
         <input type='password' placeholder='Password' name='password' class="login__input">
-        <input type='password' placeholder='Password' name='newpass' class="login__input">
-        <input type='password' placeholder='Password' name='confirmpass' class="login__input">
+        <input type='password' placeholder='New Password' name='newpass' class="login__input">
+        <input type='password' placeholder='Confirm Password' name='confirmpass' class="login__input">
 
        
         <label for='#informed' class='login__check-info'></label>

@@ -82,7 +82,7 @@
                 if (request.getRemoteUser() != null) {
                     out.print("<a href=\"/logout\" class=\"btn btn--sign\">Đăng xuất</a>");
                 } else {
-                    out.print("<a href=\"/register\" class=\"btn btn--sign\">Sign in</a>");
+                    out.print("<a href=\"/register\" class=\"btn btn--sign\">Đăng Ký</a>");
                 }
             %>
 
