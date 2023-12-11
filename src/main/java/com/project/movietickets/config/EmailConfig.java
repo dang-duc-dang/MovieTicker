@@ -9,8 +9,8 @@ import java.util.Properties;
 
 @Configuration
 public class EmailConfig {
-    private static String USERNAME = "hac.cinema";
-    private static String PASSWORD = "HacCinema123";
+    private static String USERNAME = "dangnhpd06048@fpt.edu.vn";
+    private static String PASSWORD = "tibnfakjzxwaasux";
 
     @Bean
     public JavaMailSender getJavaMailSender() {

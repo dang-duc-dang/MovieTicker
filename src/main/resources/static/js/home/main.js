@@ -1425,7 +1425,7 @@ function init_BookingTwo() {
 
                 switch (ticketPrice) {
                     case '10':
-                        sum += 10;
+                        sum += 40;
                         cheap += 1;
                         break;
                     case '20':
@@ -1459,7 +1459,7 @@ function init_BookingTwo() {
 
             switch (ticketPrice) {
                 case '10':
-                    sum += 10;
+                    sum += 40;
                     cheap += 1;
                     break;
                 case '20':
