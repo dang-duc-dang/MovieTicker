@@ -39,6 +39,7 @@
 				</div>
 
 
+				<p style="margin-top: 30px;" class="wthree w3l"><a style="color: red;" href="http://localhost:8080/restore-password">Quên mật khẩu?</a></p>
 
 				<input type="submit" class="register" value="SIGN IN">
 			</form>

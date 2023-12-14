@@ -26,7 +26,7 @@
                         <li class="book-result__item">Tickets: <span class="book-result__count booking-ticket">3</span>
                         </li>
                         <li class="book-result__item">One item price: <span
-                                class="book-result__count booking-price">$20</span></li>
+                                class="book-result__count booking-price">40000Đ</span></li>
                         <li class="book-result__item">Total: <span class="book-result__count booking-cost">$60</span>
                         </li>
                     </ul>
@@ -49,7 +49,7 @@
                         <a href="#" class="payment__item">
                             <img alt='' src="/images/payment/pay6.png">
                         </a>
-                        <a href="#" class="payment__item">
+                        <a href="http://localhost:8080/pay" class="payment__item">
                             <img alt='' src="/images/payment/pay7.png">
                         </a>
 
@@ -81,3 +81,35 @@
 
 
         <div class="clearfix"></div>
+        
+        
+        <script type="text/javascript">
+var storedArrayString = sessionStorage.getItem('selectedSeats');
+
+// Kiểm tra xem giá trị có tồn tại hay không
+if (storedArrayString) {
+    // Chuyển đổi chuỗi JSON thành mảng
+    var storedArray = JSON.parse(storedArrayString);
+
+    // Lấy số lượng phần tử trong mảng
+    var arrayLength = storedArray.length;
+
+    var totalPrice = arrayLength * 40000;
+
+    var totalElement = document.querySelector('.book-result__count.booking-cost');
+    if (totalElement) {
+        totalElement.textContent =  totalPrice + 'Đ';
+
+        sessionStorage.setItem('totalPrice', totalPrice);
+    }
+    // Gán giá trị cho phần tử HTML
+    var countElement = document.querySelector('.book-result__count.booking-ticket');
+    if (countElement) {
+        countElement.textContent = arrayLength;
+    } else {
+        console.log('Không tìm thấy phần tử HTML để gán giá trị');
+    }
+} else {
+    console.log('Giá trị không tồn tại trong Session Storage');
+}
+ </script>

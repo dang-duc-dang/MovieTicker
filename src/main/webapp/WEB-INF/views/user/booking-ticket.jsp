@@ -224,7 +224,7 @@
 
 		function showTicket() {
 			$('.checkout-wrapper').addClass('hidden');
-			$('.ticket-wrapper').removeClass('hidden');
+			$('.ticket-wrapper').removeClass('hidden'); 
 		}
 	</script>
 

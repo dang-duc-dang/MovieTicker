@@ -47,7 +47,7 @@ public class BookingTicketController {
 	        // Nếu không có vé hợp lệ, có thể thực hiện các xử lý khác ở đây nếu cần
 	        // Ví dụ: Hiển thị thông báo lỗi, chuyển hướng đến trang khác, vv.
 	    }
-
+	    session.setAttribute("roomChairIds", roomChairIds);
 	    return modelAndView;
 	}
 }

@@ -81,4 +81,16 @@ public class BookingTicketService {
 
         return true;
     }
+    
+    public TicketEntity updatePay(boolean isPay) {
+    	  var code = UUID.randomUUID().toString().substring(0, 13).toUpperCase();
+		var ticket = TicketEntity.builder()
+                   .isPay(true)
+                   .code(code)
+                  .build();
+         
+          
+
+           return ticketRepository.save(ticket);
+    }
 }
