@@ -5,23 +5,22 @@
             <div class="order-container">
                 <div class="order">
                     <img class="order__images" alt='' src="/images/tickets.png">
-                    <p class="order__title">Book a ticket <br><span class="order__descript">and have fun movie
-                            time</span></p>
+                    <p class="order__title">ĐẶT VÉ <br><span class="order__descript">và chúc bạn có thời gian xem phim vui vẻ</span></p>
                     <div class="order__control">
-                        <a href="" class="order__control-btn active">Purchase</a>
-                        <a href="book3-reserve.html" class="order__control-btn">Reserve</a>
+                        <a href="" class="order__control-btn active">Mua</a>
+                        <a href="book3-reserve.html" class="order__control-btn">Dự trữ</a>
                     </div>
                 </div>
             </div>
             <div class="order-step-area">
                 <div class="order-step first--step order-step--disable ">1. What &amp; Where &amp; When</div>
-                <div class="order-step second--step order-step--disable">2. Choose a sit</div>
-                <div class="order-step third--step">3. Check out</div>
+                <div class="order-step second--step order-step--disable">2. Chọn chỗ ngồi</div>
+                <div class="order-step third--step">3. Thủ tục thanh toán</div>
             </div>
 
             <div class="col-sm-12">
                 <div class="checkout-wrapper">
-                    <h2 class="page-heading">price</h2>
+                    <h2 class="page-heading">GIÁ</h2>
                     <ul class="book-result">
                         <li class="book-result__item">Tickets: <span class="book-result__count booking-ticket">3</span>
                         </li>
@@ -31,7 +30,7 @@
                         </li>
                     </ul>
 
-                    <h2 class="page-heading">Choose payment method</h2>
+                    <h2 class="page-heading">LỰA CHỌN HÌNH THỨC THANH TOÁN</h2>
                     <div class="payment">
                         <button id="checkout-offline" class="btn btn-primary" style="padding: 4px 12px;">Tại quầy</button>
                         <a href="#" class="payment__item">
@@ -49,14 +48,14 @@
                         <a href="#" class="payment__item">
                             <img alt='' src="/images/payment/pay6.png">
                         </a>
-                        <a href="http://localhost:8080/pay" class="payment__item">
+                        <a href="http://localhost:8080/pay" id="form-checkout" class="payment__item">
                             <img alt='' src="/images/payment/pay7.png">
                         </a>
 
 
                     </div>
 
-                    <h2 class="page-heading">Contact information</h2>
+                    <h2 class="page-heading">THÔNG TIN LIÊN LẠC</h2>
 
                     <form id='contact-info' method='post' novalidate="" class="form contact-info">
                         <div class="contact-info__field contact-info__field-mail">

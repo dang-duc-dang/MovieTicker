@@ -1423,20 +1423,7 @@ function init_BookingTwo() {
 
                 $(this).addClass('sits-state--your');
 
-                switch (ticketPrice) {
-                    case '10':
-                        sum += 40;
-                        cheap += 1;
-                        break;
-                    case '20':
-                        sum += 20;
-                        middle += 1;
-                        break;
-                    case '30':
-                        sum += 30;
-                        expansive += 1;
-                        break;
-                }
+         
             }
         });
 
@@ -1460,15 +1447,6 @@ function init_BookingTwo() {
             switch (ticketPrice) {
                 case '10':
                     sum += 40;
-                    cheap += 1;
-                    break;
-                case '20':
-                    sum += 20;
-                    middle += 1;
-                    break;
-                case '30':
-                    sum += 30;
-                    expansive += 1;
                     break;
             }
         });

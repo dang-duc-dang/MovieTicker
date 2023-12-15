@@ -27,6 +27,8 @@ public class BookingTicketService {
 
     private final Set<Integer> processedRoomChairIds = new HashSet<>();
     
+    private List<TicketEntity> currentBoughtTickets = new ArrayList<>();
+    
     public TicketEntity buyTicket(int scheduleId, int roomChairId, String username) {
         if ( !isTicketValid(scheduleId, roomChairId)) {
             return null;
@@ -61,6 +63,7 @@ public class BookingTicketService {
         var ticket = TicketEntity.builder()
                 .date(LocalDate.now())
                 .code(code)
+                .isPay(false)
                 .roomChair(roomChair)
                 .roomMovieSchedule(roomChairSchedule)
                 .user(user)
@@ -69,7 +72,21 @@ public class BookingTicketService {
       
        
 
+        currentBoughtTickets.add(ticket);
         return ticketRepository.save(ticket);
+    }
+    
+    public void updatePaymentStatus(boolean isPay) {
+        for (TicketEntity ticket : currentBoughtTickets) {
+            if (ticket != null) {
+                // Cập nhật trạng thái thanh toán cho tất cả các vé đã mua trong lần gọi mua vé này
+                ticket.setPay(true);
+                ticketRepository.save(ticket);
+            }
+        }
+
+        // Sau khi cập nhật, đặt danh sách currentBoughtTickets về trạng thái ban đầu
+        currentBoughtTickets = new ArrayList<>();
     }
 
     public boolean isTicketValid(int scheduleId, int roomChairId){
@@ -82,15 +99,5 @@ public class BookingTicketService {
         return true;
     }
     
-    public TicketEntity updatePay(boolean isPay) {
-    	  var code = UUID.randomUUID().toString().substring(0, 13).toUpperCase();
-		var ticket = TicketEntity.builder()
-                   .isPay(true)
-                   .code(code)
-                  .build();
-         
-          
 
-           return ticketRepository.save(ticket);
-    }
 }

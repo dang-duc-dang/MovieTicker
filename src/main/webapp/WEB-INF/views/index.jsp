@@ -268,7 +268,7 @@
 				<div class="col-sm-4 similar-wrap col--remove">
 					<div class="post post--preview post--preview--wide">
 						<div class="post__image">
-							<img alt='' src="http://placehold.it/270x330">
+							<img alt='' src="https://amovie.gozha.net/images/client-photo/post-thor.jpg">
 							<div class="social social--position social--hide">
 								<span class="social__name">Share:</span> <a href='#'
 									class="social__variant social--first fa fa-facebook"></a> <a
@@ -286,7 +286,7 @@
 				<div class="col-sm-4 similar-wrap col--remove">
 					<div class="post post--preview post--preview--wide">
 						<div class="post__image">
-							<img alt='' src="http://placehold.it/270x330">
+							<img alt='' src="https://amovie.gozha.net/images/client-photo/post-annual.jpg">
 							<div class="social social--position social--hide">
 								<span class="social__name">Share:</span> <a href='#'
 									class="social__variant social--first fa fa-facebook"></a> <a
@@ -304,7 +304,7 @@
 				<div class="col-sm-4 similar-wrap col--remove">
 					<div class="post post--preview post--preview--wide">
 						<div class="post__image">
-							<img alt='' src="http://placehold.it/270x330">
+							<img alt='' src="https://amovie.gozha.net/images/client-photo/post-awards.jpg">
 							<div class="social social--position social--hide">
 								<span class="social__name">Share:</span> <a href='#'
 									class="social__variant social--first fa fa-facebook"></a> <a

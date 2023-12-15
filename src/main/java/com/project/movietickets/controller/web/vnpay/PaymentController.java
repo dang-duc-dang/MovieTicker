@@ -18,6 +18,8 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -42,7 +44,7 @@ public class PaymentController {
         String vnp_Command = "pay";
         String orderType = "other";
         long amount = totalPrice * 100;
-       
+        bookingTicketService.updatePaymentStatus(true);
         String bankCode = "NCB";
         
         String vnp_TxnRef = Config.getRandomNumber(8);

@@ -81,7 +81,7 @@
 				<div class="order-step-area">
 					<div class="order-step first--step order-step--disable ">1.
 						What &amp; Where &amp; When</div>
-					<div class="order-step second--step">2. Choose a sit</div>
+					<div class="order-step second--step">2. Chọn chỗ ngồi</div>
 				</div>
 
 				<div class="choose-sits">
