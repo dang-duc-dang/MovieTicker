@@ -21,9 +21,9 @@
     <p class="login__tracker">or</p>
 
     <div class="field-wrap">
-        <input type='password' placeholder='Password' name='password' class="login__input">
-        <input type='password' placeholder='New Password' name='newpass' class="login__input">
-        <input type='password' placeholder='Confirm Password' name='confirmpass' class="login__input">
+        <input type='password' placeholder='Mật khẩu cũ' name='password' class="login__input">
+        <input type='password' placeholder='Mật khẩu mới' name='newpass' class="login__input">
+        <input type='password' placeholder='Nhập lại mật khẩu mới' name='confirmpass' class="login__input">
 
        
         <label for='#informed' class='login__check-info'></label>

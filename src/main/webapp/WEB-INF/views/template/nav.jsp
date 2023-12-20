@@ -31,44 +31,44 @@
             <ul id="navigation">
                 <li>
                     <span class="sub-nav-toggle plus"></span>
-                    <a href="/">HOME</a>
+                    <a href="/">Trang Chủ</a>
                 </li>
                 <li>
                     <span class="sub-nav-toggle plus"></span>
-                    <a href="/amount">PRICE PAGE</a>
+                    <a href="/amount">Trang Giá</a>
                 </li>
 
                 <%
                     if (request.isUserInRole("ROLE_USER")) {
                         out.print("<li>\n" +
                                 "                    <span class=\"sub-nav-toggle plus\"></span>\n" +
-                                "                    <a href=\"/history\">HISTORY</a>\n" +
+                                "                    <a href=\"/history\">Vé Đã Mua</a>\n" +
                                 "                </li>");
                         out.print("<li>\n" +
                                 "                    <span class=\"sub-nav-toggle plus\"></span>\n" +
-                                "                    <a href=\"/change-password\">CHANGE PASSWORD</a>\n" +
+                                "                    <a href=\"/change-password\">Đổi Mật Khẩu</a>\n" +
                                 "                </li>");
                     } else if (request.isUserInRole("ROLE_EMPLOYEE")) {
                         out.print("<li>\n" +
                                 "                    <span class=\"sub-nav-toggle plus\"></span>\n" +
-                                "                    <a href=\"/manage\">In vé</a>\n" +
+                                "                    <a href=\"/manage\">In Vé</a>\n" +
                                 "                </li>");
                     } else if (request.isUserInRole("ROLE_ADMIN")) {
                         out.print("<li>\n" +
                                 "                    <span class=\"sub-nav-toggle plus\"></span>\n" +
-                                "                    <a href=\"/admin\">Manage</a>\n" +
+                                "                    <a href=\"/admin\">Quản Lý</a>\n" +
                                 "                </li>");
                     }
 
                     if (request.getRemoteUser() != null) {
                         out.print("<li>\n" +
                                 "                    <span class=\"sub-nav-toggle plus\"></span>\n" +
-                                "                    <a href=\"/information\">PERSONAL PAGE</a>\n" +
+                                "                    <a href=\"/information\">Cá Nhân</a>\n" +
                                 "                </li>");
                     } else {
                         out.print("<li>\n" +
                                 "                    <span class=\"sub-nav-toggle plus\"></span>\n" +
-                                "                    <a href=\"/login\">LOG IN</a>\n" +
+                                "                    <a href=\"/login\">Đăng Nhập</a>\n" +
                                 "                </li>");
                     }
                 %>
@@ -80,9 +80,9 @@
         <div class="control-panel">
             <%
                 if (request.getRemoteUser() != null) {
-                    out.print("<a href=\"/logout\" class=\"btn btn--sign\">LOG OUT</a>");
+                    out.print("<a href=\"/logout\" class=\"btn btn--sign\">Đăng Xuất</a>");
                 } else {
-                    out.print("<a href=\"/register\" class=\"btn btn--sign\">REGISTER</a>");
+                    out.print("<a href=\"/register\" class=\"btn btn--sign\">Đăng Ký</a>");
                 }
             %>
 

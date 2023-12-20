@@ -43,14 +43,14 @@
 		
 		
 		      <div class="movie-best">
-                <div class="col-sm-10 col-sm-offset-1 movie-best__rating">Today Best choice</div>
+                <div class="col-sm-10 col-sm-offset-1 movie-best__rating">Sự lựa chọn tốt nhất hôm nay</div>
                 <div class="col-sm-12 change--col">
                     <div class="movie-beta__item ">
                         <img alt='' src="https://amovie.gozha.net/images/movie/movie-sample1.jpg">
                         <span class="best-rate">5.0</span>
 
                         <ul class="movie-beta__info">
-                            <li><span class="best-voted">71 people voted today</span></li>
+                            <li><span class="best-voted">71 người đã bình chọn hôm nay</span></li>
                             <li>
                                 <p class="movie__time">169 min</p>
                                 <p>Adventure | Drama | Fantasy </p>
@@ -66,7 +66,7 @@
                         <span class="best-rate">5.0</span>
 
                         <ul class="movie-beta__info">
-                            <li><span class="best-voted">71 people voted today</span></li>
+                            <li><span class="best-voted">71 người đã bình chọn hôm nay</span></li>
                             <li>
                                 <p class="movie__time">169 min</p>
                                 <p>Adventure | Drama | Fantasy </p>
@@ -82,7 +82,7 @@
                         <span class="best-rate">5.0</span>
 
                         <ul class="movie-beta__info">
-                            <li><span class="best-voted">71 people voted today</span></li>
+                            <li><span class="best-voted">71 người đã bình chọn hôm nay</span></li>
                             <li>
                                 <p class="movie__time">169 min</p>
                                 <p>Adventure | Drama | Fantasy </p>
@@ -98,7 +98,7 @@
                         <span class="best-rate">5.0</span>
 
                         <ul class="movie-beta__info">
-                            <li><span class="best-voted">71 people voted today</span></li>
+                            <li><span class="best-voted">71 người đã bình chọn hôm nay</span></li>
                             <li>
                                 <p class="movie__time">169 min</p>
                                 <p>Adventure | Drama | Fantasy </p>
@@ -114,7 +114,7 @@
                         <span class="best-rate">5.0</span>
 
                         <ul class="movie-beta__info">
-                            <li><span class="best-voted">71 people voted today</span></li>
+                            <li><span class="best-voted">71 người đã bình chọn hôm nay</span></li>
                             <li>
                                 <p class="movie__time">169 min</p>
                                 <p>Adventure | Drama | Fantasy </p>
@@ -130,7 +130,7 @@
                         <span class="best-rate">5.0</span>
 
                         <ul class="movie-beta__info">
-                            <li><span class="best-voted">71 people voted today</span></li>
+                            <li><span class="best-voted">71 người đã bình chọn hôm nay</span></li>
                             <li>
                                 <p class="movie__time">169 min</p>
                                 <p>Adventure | Drama | Fantasy </p>
@@ -142,15 +142,14 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-10 col-sm-offset-1 movie-best__check">check all movies now playing</div>
+                <div class="col-sm-10 col-sm-offset-1 movie-best__check">kiểm tra tất cả các phim đang chiếu</div>
             </div>
 
 
             <div class="clearfix"></div>
 
 			
-			<h2 id='target' class="page-heading heading--outcontainer">Now
-				in the cinema</h2>
+			<h2 id='target' class="page-heading heading--outcontainer">BÂY GIỜ TRONG Rạp chiếu phim</h2>
 
 			<div class="col-sm-12">
 				<div class="row">
@@ -184,7 +183,7 @@
 											src="images/star-on.png" alt=""> <img
 											src="images/star-on.png" alt=""> <img
 											src="images/star-on.png" alt=""> <span
-											class="movie__rating">4.1</span>
+											class="movie__rating">4.5</span>
 									</div>
 								</div>
 							</div>
@@ -197,7 +196,7 @@
 							<div class="promo marginb-sm">
 								<div class="promo__head">A.Movie app</div>
 								<div class="promo__describe">
-									for all smartphones<br> and tablets
+									cho tất cả điện thoại thông minh<br>và máy tính bảng
 								</div>
 								<div class="promo__content">
 									<ul>
@@ -214,8 +213,7 @@
 							<div
 								class="category category--discuss category--count marginb-sm mobile-category ls-cat">
 								<h3 class="category__title">
-									the Most <br> <span class="title-edition">discussed
-										posts</span>
+									nhất <br> <span class="title-edition">bài viết thảo luận</span>
 								</h3>
 								<ol>
 									<li><a href="#" class="category__item">Gravity</a></li>
@@ -238,8 +236,9 @@
 							<div
 								class="category category--cooming category--count marginb-sm mobile-category rs-cat">
 								<h3 class="category__title">
-									coming soon<br>
-									<span class="title-edition">movies</span>
+									sắp ra mắt<br>
+									<span class="title-edition">
+phim</span>
 								</h3>
 								<ol>
 									<li><a href="#" class="category__item">Ender's Game</a></li>
@@ -263,7 +262,7 @@
 			</div>
 
 			<div class="col-sm-12">
-				<h2 class="page-heading">Latest news</h2>
+				<h2 class="page-heading">Tin mới nhất</h2>
 
 				<div class="col-sm-4 similar-wrap col--remove">
 					<div class="post post--preview post--preview--wide">

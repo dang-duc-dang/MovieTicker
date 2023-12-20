@@ -5,12 +5,18 @@
 <html>
 <head>
     <!-- Head -->
-    <jsp:include page="template/header.jsp"/>
+    
+    <link href="/css/layout/form.css" rel="stylesheet" type="text/css" media="all" />
+    <link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
+      
+   
 </head>
 
 <body>
 <!-- Nav -->
-<jsp:include page="template/nav.jsp"/>
+
+
+
 <!-- Content-->
 <div class="content">
 
@@ -18,7 +24,7 @@
         Message message = (Message) request.getAttribute("message");
         if (message != null) {
             if (message.getCode() == Message.SUCCESS) {
-                out.print("<div class='alert alert-success'>"
+                out.print("<div style='color: rgb(42, 165, 67);' class='alert copyright alert-success'>"
                         + "<strong>Thành công!</strong> "
                         + message.getMessage()
                         + "</div>");
@@ -31,29 +37,39 @@
         }
     %>
 
-    <div class="container-fluid" style="min-height: 450px;">
-        <h2 class="text-center" style="color:#000000;">KHÔI PHỤC MẬT KHẨU</h2><br>
-        <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-4 well well-sm col-md-offset-4">
-                <legend><a href=""></a>Quên mật khẩu
-                </legend>
-                <form method="post" class="form" role="form" action="/restore-password">
-                    <input class="form-control" name="username" placeholder="Tên đăng nhập" type="text" required><br>
-                    <input class="form-control" name="password" placeholder="Mật khẩu" type="password" required><br>
-                    <input class="form-control" name="rePassword" placeholder="Nhập lại mật khẩu" type="password"
-                           required><br>
-                    <button class="btn btn-lg btn-primary btn-block" type="submit">Lấy lại mật khẩu</button>
-                    <br>
-                    <h5 style="color: #0f1315">Bạn chưa có tài khoản ?
-                        <a href="/register">Đăng kí</a>
-                    </h5>
-                </form>
-            </div>
-        </div>
-    </div>
+    
+    	<div class="">
+		<div class="header-main">
+			<h1>Quên mật khẩu</h1>
+			<div class="header-bottom">
+				<div class="header-right w3agile">
+
+					<div class="header-left-bottom agileinfo">
+
+						<form action="/restore-password" class="form" role="form" method="post">
+							<input type="text" placeholder="Tên đăng nhập" name="username" required />
+							<input type="password" placeholder="Mật khẩu mới" name="password"
+								required />
+							<input type="password" placeholder="Nhập lại mật khẩu mới" name="rePassword" required/>
+
+							<input type="submit" value="Cập nhật">
+						</form>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!--header end here-->
+	<div class="copyright">
+		<p>Nếu bạn chưa có tài khoản | Nhanh tay <a style="color: rgb(42, 165, 67);" href="http://localhost:8080/register"
+				>
+				Đăng ký ngay </a></p>
+	</div>
 </div>
 
 <!-- Footer -->
-<jsp:include page="template/footer.jsp"/>
+
 </body>
 </html>

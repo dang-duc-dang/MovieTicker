@@ -38,15 +38,7 @@
 		<div class="loader-section section-right"></div>
 
 	</div>
-       <!-- Search bar -->
-        <div class="search-wrapper">
-            <div class="container container--add">
-                <form id='search-form' method='get' class="search">
-                    <input type="text" class="search__field" placeholder="Search">
-                    <button type='submit' class="btn btn-md btn--danger search__button">search a movie</button>
-                </form>
-            </div>
-        </div>
+
 
 <section class="container">
     <div class="col-sm-12">

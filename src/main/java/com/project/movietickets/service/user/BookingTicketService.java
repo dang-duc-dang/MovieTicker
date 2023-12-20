@@ -29,6 +29,7 @@ public class BookingTicketService {
     
     private List<TicketEntity> currentBoughtTickets = new ArrayList<>();
     
+    
     public TicketEntity buyTicket(int scheduleId, int roomChairId, String username) {
         if ( !isTicketValid(scheduleId, roomChairId)) {
             return null;

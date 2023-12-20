@@ -25,7 +25,7 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:800italic' rel='stylesheet' type='text/css'>
 <!-- Custom -->
 <link href="/css/style.css?v=1" rel="stylesheet" />
-<link href="/css/account.css" rel="stylesheet" />
+
 <!-- Modernizr -->
 <script src="/js/external/modernizr.custom.js"></script>
 

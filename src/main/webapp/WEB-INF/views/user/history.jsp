@@ -28,7 +28,7 @@
 		<div class="order-container">
 			 <div class="order">
                     <img class="order__images" alt='' src="/images/tickets.png">
-                    <p class="order__title">Thank you <br><span class="order__descript">you have successfully purchased tickets</span></p>
+                    <p class="order__title">Cảm ơn bạn <br><span class="order__descript">bạn đã mua vé thành công</span></p>
                 </div>
 			<c:forEach var="ticket" items="${tickets}">
 				<div class="ticket">
@@ -50,13 +50,13 @@
 									class="ticket__cost">${ticket.amount}.000Đ</strong></span>
 								<c:choose>
 									<c:when test="${ticket.received}">
-										<span>status: Đã nhận vé!</span>
+										<span>Tình trạng: Đã nhận vé!</span>
 									</c:when>
 									<c:when test="${ticket.pay}">
-										<span>status: Đã thanh toán!</span>
+										<span>Tình trạng: Đã thanh toán!</span>
 									</c:when>
 									<c:otherwise>
-										<span>status: Chưa thanh toán!</span>
+										<span>Tình trạng: Chưa thanh toán!</span>
 									</c:otherwise>
 								</c:choose>
 							</div>

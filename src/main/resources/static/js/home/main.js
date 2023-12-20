@@ -1433,27 +1433,31 @@ function init_BookingTwo() {
 
     // Hàm hiển thị danh sách ghế đã chọn
     function displaySelectedSeats() {
-        // Xóa toàn bộ nội dung trong .checked-place
-        $('.checked-place').empty();
+    // Xóa toàn bộ nội dung trong .checked-place
+    $('.checked-place').empty();
 
-        // Thêm lại từng ghế đã chọn
-        selectedSeats.forEach(function (roomId) {
-            var place = $('.sits__place[data-room-chair-id="' + roomId + '"]').attr('data-place');
-            var ticketPrice = $('.sits__place[data-room-chair-id="' + roomId + '"]').attr('data-price');
-            var position = $('.sits__place[data-room-chair-id="' + roomId + '"]').text();
+    // Reset tổng giá vé khi hiển thị lại danh sách ghế đã chọn
+    var sum = 0;
 
-            $('.checked-place').append('<span class="choosen-place ' + place + '" data-sit="' + place + '">' + position + '</span>');
+    // Thêm lại từng ghế đã chọn
+    selectedSeats.forEach(function (roomId) {
+        var placeElement = $('.sits__place[data-room-chair-id="' + roomId + '"]');
+        var place = placeElement.attr('data-place');
+        
+        // Sửa đổi giá vé thành 40
+        var ticketPrice = 40;
 
-            switch (ticketPrice) {
-                case '10':
-                    sum += 40;
-                    break;
-            }
-        });
+        var position = placeElement.text();
 
-        // Cập nhật kết quả
-        $('.checked-result').text('$' + sum);
-    }
+        $('.checked-place').append('<span class="choosen-place ' + place + '" data-sit="' + place + '">' + position + '</span>');
+
+        // Thực hiện phép nhân giá vé với số lượng ghế đã chọn và cộng vào sum
+        sum += ticketPrice;
+    });
+
+    // Cập nhật kết quả
+    $('.checked-result').text('$' + sum);
+}
 
     // Áp dụng trạng thái đã chọn khi tải trang
     applySelectedSeats();

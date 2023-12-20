@@ -36,20 +36,9 @@
                         <a href="#" class="payment__item">
                             <img alt='' src="="> or
                         </a>
-                        <a href="#" class="payment__item">
-                            <img alt='' src="/images/payment/pay3.png">
-                        </a>
-                        <a href="#" class="payment__item">
-                            <img alt='' src="/images/payment/pay4.png">
-                        </a>
-                        <a href="#" class="payment__item">
-                            <img alt='' src="/images/payment/pay5.png">
-                        </a>
-                        <a href="#" class="payment__item">
-                            <img alt='' src="/images/payment/pay6.png">
-                        </a>
+                      
                         <a href="http://localhost:8080/pay" id="form-checkout" class="payment__item">
-                            <img alt='' src="/images/payment/pay7.png">
+                            <img alt='' style="height: 40px" src="/images/payment/pay9.png">
                         </a>
 
 

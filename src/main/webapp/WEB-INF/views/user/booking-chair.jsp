@@ -69,13 +69,10 @@
 					<div class="order">
 						<img class="order__images" alt='' src="/images/tickets.png">
 						<p class="order__title">
-							Book a ticket <br>
-							<span class="order__descript">and have fun movie time</span>
+							ĐẶT VÉ <br>
+							<span class="order__descript">và chúc bạn có thời gian xem phim vui vẻ</span>
 						</p>
-						<div class="order__control">
-							<a href="#" class="order__control-btn active">Purchase</a> <a
-								href="#" class="order__control-btn">Reserve</a>
-						</div>
+					
 					</div>
 				</div>
 				<div class="order-step-area">
@@ -95,14 +92,14 @@
 
 					<div class="choose-sits__info">
 						<ul>
-							<li class="sits-state sits-state--not">Not available</li>
-							<li class="sits-state sits-state--your">Your choice</li>
+							<li class="sits-state sits-state--not">Không có sẵn</li>
+							<li class="sits-state sits-state--your">Lựa chọn của bạn</li>
 						</ul>
 					</div>
 
 					<div class="col-sm-12 col-lg-10 col-lg-offset-1">
 						<div class="sits-area hidden-xs">
-							<div class="sits-anchor">screen</div>
+							<div class="sits-anchor">Màn hình</div>
 
 							<div class="sits">
 								<aside class="sits__line">
@@ -110,13 +107,8 @@
 										class="sits__indecator">B</span> <span class="sits__indecator">C</span>
 									<span class="sits__indecator">D</span> <span
 										class="sits__indecator">E</span> <span class="sits__indecator">F</span>
-									<span class="sits__indecator">G</span> 
-									<span class="sits__indecator">G</span> 
-									<span class="sits__indecator">G</span> 
-									<span class="sits__indecator">G</span> 
-									<span class="sits__indecator">G</span> 
-									<span class="sits__indecator">G</span> 
-									<span class="sits__indecator">G</span> 
+										<span class="sits__indecator">G</span>
+									
 									
 								</aside>
 
@@ -147,64 +139,24 @@
 								<footer class="sits__number">
 									<span class="sits__indecator">1</span> <span
 										class="sits__indecator">2</span> <span class="sits__indecator">3</span>
-									<span class="sits__indecator">4</span> <span
+									<span class="sits__indecator">4</span>
+									<span style="padding-right: 30px"></span>
+									 <span
 										class="sits__indecator">5</span> <span class="sits__indecator">6</span>
 									<span class="sits__indecator">7</span> <span
-										class="sits__indecator">8</span>  
+										class="sits__indecator">8</span> 
+										<span style="padding-right: 30px"></span> 
+										<span
+										class="sits__indecator">9</span>  
+										<span
+										class="sits__indecator">10</span>  
+										<span
+										class="sits__indecator">11</span>  
+										<span
+										class="sits__indecator">12</span>  
+										
 								</footer>
 							</div>
-						</div>
-					</div>
-
-					<div class="col-sm-12 visible-xs">
-						<div class="sits-area--mobile">
-							<div class="sits-area--mobile-wrap">
-								<div class="sits-select">
-									<select name="sorting_item" class="sits__sort sit-row"
-										tabindex="0">
-										<option value="1" selected='selected'>A</option>
-										<option value="2">B</option>
-										<option value="3">C</option>
-										<option value="4">D</option>
-										<option value="5">E</option>
-										<option value="6">F</option>
-										<option value="7">G</option>
-									
-									</select> <select name="sorting_item" class="sits__sort sit-number"
-										tabindex="1">
-										<option value="1" selected='selected'>1</option>
-										<option value="2">2</option>
-										<option value="3">3</option>
-										<option value="4">4</option>
-										<option value="5">5</option>
-										<option value="6">6</option>
-										<option value="7">7</option>
-										<option value="8">8</option>
-										<option value="9">9</option>
-										<option value="10">10</option>
-										<option value="11">11</option>
-										<option value="12">12</option>
-										<option value="13">13</option>
-										<option value="14">14</option>
-										<option value="15">15</option>
-										<option value="16">16</option>
-										<option value="17">17</option>
-										<option value="18">18</option>
-									</select> <a href="#" class="btn btn-md btn--warning toogle-sits">Choose
-										sit</a>
-								</div>
-							</div>
-
-							<a href="#" class="watchlist add-sits-line">Add new sit</a>
-
-							<aside class="sits__checked">
-								<div class="checked-place">
-									<span class="choosen-place"></span>
-								</div>
-								<div class="checked-result">$0</div>
-							</aside>
-
-							<img alt="" src="images/components/sits_mobile.png">
 						</div>
 					</div>
 
@@ -232,11 +184,11 @@
 
 		<div class="booking-pagination booking-pagination--margin">
 			<a href="book1.html" class="booking-pagination__prev"> <span
-				class="arrow__text arrow--prev">prev step</span> <span
+				class="arrow__text arrow--prev">bước trước</span> <span
 				class="arrow__info">what&amp;where&amp;when</span>
 			</a> <a id="click_on_session" class="booking-pagination__next"> <span
-				class="arrow__text arrow--next">next step</span> <span
-				class="arrow__info">checkout</span>
+				class="arrow__text arrow--next">bước tiếp theo</span> <span
+				class="arrow__info">Thủ tục thanh toán</span>
 			</a>
 		</div>
 	</form>
