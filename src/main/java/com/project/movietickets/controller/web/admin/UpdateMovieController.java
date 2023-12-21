@@ -1,5 +1,6 @@
 package com.project.movietickets.controller.web.admin;
 
+import com.project.movietickets.entity.categoryEntity;
 import com.project.movietickets.service.MovieService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
@@ -26,7 +27,7 @@ public class UpdateMovieController {
                          @RequestParam String name,
                          @RequestParam String description,
                          @RequestParam String director,
-                         @RequestParam String category,
+                         @RequestParam categoryEntity category,
                          @RequestParam String premiere,
                          @RequestParam int time,
                          @RequestParam String language,

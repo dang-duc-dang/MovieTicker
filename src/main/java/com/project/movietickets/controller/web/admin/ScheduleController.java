@@ -33,7 +33,7 @@ public class ScheduleController {
     public String create(Model model) {
         var cinemas = cinemaService.getAllCinema();
         var movies = movieService.getAllMovie();
-
+        System.out.println(movies);
         model.addAttribute("cinemas", cinemas);
         model.addAttribute("movies", movies);
 

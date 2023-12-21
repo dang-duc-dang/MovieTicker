@@ -1,4 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
 
@@ -56,9 +57,13 @@
                         <div class="col-sm-2" style="margin-left: 150px">
                             <labe>Thể loại</labe>
                         </div>
-                        <div class="col-sm-4">
-                            <input type="text" class="form-control" name="category" required>
-                        </div>
+                         <select class="form-control col-sm-6" name="category" id="select-movie">
+                            <c:forEach var="cate" items="${category}">
+                            
+                            <option value="${cate.id}">${cate.name}</option>
+                             </c:forEach>
+                          </select>
+                         
                     </div>
                     <div class="row" style="margin-bottom: 15px">
                         <div class="col-sm-2" style="margin-left: 150px">

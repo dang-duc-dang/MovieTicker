@@ -11,24 +11,24 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class RoomMovieScheduleEntity {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(insertable = false)
-    private int id;
-
-    @ManyToOne
-    @JoinColumn
-    private RoomEntity room;
-
-    @ManyToOne
-    @JoinColumn
-    private MovieEntity movie;
-
-    @ManyToOne
-    @JoinColumn
-    private ScheduleEntity schedule;
-
-    @OneToMany(mappedBy = "roomMovieSchedule", cascade = CascadeType.ALL)
-    private List<TicketEntity> tickets;
-}
+	public class RoomMovieScheduleEntity {
+	    @Id
+	    @GeneratedValue(strategy = GenerationType.IDENTITY)
+	    @Column(insertable = false)
+	    private int id;
+	
+	    @ManyToOne
+	    @JoinColumn
+	    private RoomEntity room;
+	
+	    @ManyToOne
+	    @JoinColumn
+	    private MovieEntity movie;
+	
+	    @ManyToOne
+	    @JoinColumn
+	    private ScheduleEntity schedule;
+	
+	    @OneToMany(mappedBy = "roomMovieSchedule", cascade = CascadeType.ALL)
+	    private List<TicketEntity> tickets;
+	}

@@ -57,7 +57,7 @@
 
                     <p class="movie__time">${movie.time} phút</p>
                     <p class="movie__option"><strong>Ngôn ngữ: </strong>${movie.language}</p>
-                    <p class="movie__option"><strong>Thể loại: </strong>${movie.category}</p>
+                    <p class="movie__option"><strong>Thể loại: </strong>${movie.category.name}</p>
                     <p class="movie__option"><strong>Ngày chiếu: </strong>${movie.premiere}</p>
                     <p class="movie__option"><strong>Đạo diễn: </strong>${movie.director}</p>
                     <p class="movie__option"><strong>Định dạng: </strong>${movie.format}</p>

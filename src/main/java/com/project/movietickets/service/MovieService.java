@@ -2,7 +2,10 @@ package com.project.movietickets.service;
 
 import com.project.movietickets.entity.MovieEntity;
 import com.project.movietickets.entity.RoomMovieScheduleEntity;
+import com.project.movietickets.entity.categoryEntity;
 import com.project.movietickets.repository.MovieRepository;
+import com.project.movietickets.repository.categoryReposytory;
+
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
@@ -16,12 +19,18 @@ import java.util.stream.Collectors;
 @RequiredArgsConstructor
 public class MovieService {
     private final MovieRepository movieRepository;
+   
 
     private final StorageService storageService;
 
     public List<MovieEntity> getAllMovie() {
         return movieRepository.findAll();
     }
+    
+    public List<MovieEntity> getAllMovieBycate() {
+        return movieRepository.findAll();
+    }
+    
 
     public void deleteMovie(int id) {
         movieRepository.deleteById(id);
@@ -30,7 +39,7 @@ public class MovieService {
     public MovieEntity createMovie(String name,
                                    String description,
                                    String director,
-                                   String category,
+                                   categoryEntity category,
                                    String premiere,
                                    int time,
                                    String language,
@@ -59,7 +68,7 @@ public class MovieService {
                                    String name,
                                    String description,
                                    String director,
-                                   String category,
+                                   categoryEntity category,
                                    String premiere,
                                    int time,
                                    String language,
@@ -69,7 +78,7 @@ public class MovieService {
         movie.setName(name);
         movie.setDescription(description);
         movie.setDirector(director);
-        movie.setCategory(category);
+        movie.setCategory(category);;
         movie.setPremiere(LocalDate.parse(premiere));
         movie.setTime(time);
         movie.setLanguage(language);
@@ -83,7 +92,7 @@ public class MovieService {
         return movieRepository.getOne(id);
     }
 
-    public Set<String> getAllCategories() {
+    public Set<categoryEntity> getAllCategories() {
         return movieRepository.findAll()
                 .stream()
                 .map(movie -> movie.getCategory())
