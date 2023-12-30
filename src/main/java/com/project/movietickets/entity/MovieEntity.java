@@ -2,6 +2,7 @@ package com.project.movietickets.entity;
 
 import lombok.*;
 
+
 import javax.persistence.*;
 import java.time.LocalDate;
 import java.util.List;
@@ -27,8 +28,10 @@ public class MovieEntity {
     @Column(nullable = false)
     private String director;
 
-    @Column(nullable = false)
-    private String category;
+
+	@ManyToOne
+	@JoinColumn(name = "category")
+	private categoryEntity category;
 
     @Column(nullable = false)
     private LocalDate premiere;

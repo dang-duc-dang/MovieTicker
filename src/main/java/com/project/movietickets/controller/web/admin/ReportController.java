@@ -1,5 +1,6 @@
 package com.project.movietickets.controller.web.admin;
 
+import com.project.movietickets.entity.categoryEntity;
 import com.project.movietickets.model.Report;
 import com.project.movietickets.service.MovieService;
 import com.project.movietickets.service.ReportService;
@@ -32,7 +33,7 @@ public class ReportController {
         List<Report> reports = reportService.searchReport(startDate, endDate, category);
         modelAndView.addObject("reports", reports);
 
-        Set<String> categories = movieService.getAllCategories();
+        Set<categoryEntity> categories = movieService.getAllCategories();
         modelAndView.addObject("categories", categories);
 
         return modelAndView;
