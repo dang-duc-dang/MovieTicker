@@ -5,7 +5,7 @@
 							<c:forEach var="movie" items="${allMovies}" varStatus="loopStatus">
 							
 							 <div class="movie movie--test movie--test--dark 
-							 ${movie.id == 33 || movie.id == 34 || movie.id == 37 || movie.id == 38 || movie.id == 41 || movie.id == 42 || movie.id == 45 || movie.id == 46  ? 'movie--test--left' : 'movie--test--right'}">
+							 movie--test--right">
 								
 									<div class="movie__images">
 										<a href="/movies?id=${movie.id}" class="movie-beta__link">
